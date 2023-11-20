@@ -1,9 +1,3 @@
-/* flex box é a maneira mais fácil de alinhar e distribuir elementos */
-/* a propriedade position pode alterar o fluxo do html, que é se os elementos forem block eles tomam uma linha inteira
-/* se forem inline block então ficará um ao lado do outro e quando nao couber, quebrará a linha */
-/* para fixar o header da pagina, por exemplo, devemos usar o elemento position fixed e rearanjar as posições com top, left, right e etc... */
-
-
 body {
     margin: 0;
     font-family: 'Heebo', sans-serif;
@@ -32,16 +26,13 @@ header {
 header .container {
     display: flex;
     align-items: center;
-    /* Alinha os itens no centro */
     justify-content: space-between;
-    /* Gera um espaço entre os elementos, onde um ficará na extrema esquerda e o outro na extrema direita */
     height: 100%;
 }
 
 
 header .logo {
     display: inline-block;
-    /* impede que a logo ocupe toda a faixa da tela (de uma extremnidade a outra) */
     font-size: 27px;
 
 }
@@ -74,10 +65,7 @@ header nav ul li a {
     font-size: 15px;
     letter-spacing: 0.37px;
     margin-right: 24px;
-    /* adiciona espaço entre os itens */
     text-decoration: none;
-    /* remove o sublinhado do link */
-    /* line-height: 32px; 213.333% */
 }
 
 header nav ul li a:hover {
@@ -101,7 +89,6 @@ section.hero img {
     position: absolute;
     top: 0;
     left: 0;
-    /* opacity: 0.4; */
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -149,7 +136,6 @@ section.hero img {
     text-align: center;
     border: none;
     cursor: pointer;
-    /* remove a borda do botao */
 }
 
 .hero-content button:hover {
@@ -305,7 +291,6 @@ section.newsletter {
 }
 
 section.newaletter h3 {
-    /* text-align: center; */
     letter-spacing: 0.6px;
     font-size: 24px;
     font-weight: normal;
@@ -315,13 +300,11 @@ section.newaletter h3 {
 }
 
 section.newsletter p {
-    /* text-align: center; */
     font-size: 16px;
     letter-spacing: 0.4px;
     line-height: 42px;
     margin-top: 0;
     margin-bottom: 20px;
-    /* font-weight: 400; */
 }
 
 section.newsletter form {
